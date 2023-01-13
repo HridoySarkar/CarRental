@@ -1,0 +1,19 @@
+.custom_hero_btn{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.cta-btn{
+    color: #fff !important;
+    background-color: #446679 !important;
+    border-color: #446679;
+    font-size: 18px !important;
+    padding: 14px 25px !important;
+}
+.cta-btn:hover{
+    background-color: #3f3d56 !important;
+    border-color:#3f3d56 !important;
+}
+
+
+
