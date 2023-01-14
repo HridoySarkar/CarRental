@@ -1,6 +1,7 @@
 <?php
 include 'config/userPageConfig.php';
 include 'partials/userNav.php';
+
 ?>
 
 <!DOCTYPE html>
@@ -28,23 +29,23 @@ include 'partials/userNav.php';
   <div class="mb-3">
     <h4>Where you want to go</h4>
     <label for="exampleInputEmail1" class="form-label">Pick up address</label>
-    <select class="form-select" aria-label="Default select example">
+    <select class="form-select" name="title" aria-label="Default select example">
         <option selected>Select</option>
-            <option value="1">Banani</option>
-            <option value="2">Badda</option>
-            <option value="3">Gulsan 1</option>
-            <option value="4">Gulsan 2</option>
-            <option value="5">Uttora</option>
-            <option value="6">Mohamadhpur</option>
-            <option value="7">Mirpur</option>
-            <option value="8">Shahabag</option>
-            <option value="9">Agortola</option>
+            <option value="Banani">Banani</option>
+            <option value="Badda">Badda</option>
+            <option value="Gulsan 1">Gulsan 1</option>
+            <option value="Gulsan 2">Gulsan 2</option>
+            <option value="Uttora">Uttora</option>
+            <option value="Mohamadhpur">Mohamadhpur</option>
+            <option value="Mirpur">Mirpur</option>
+            <option value="Shahabag">Shahabag</option>
+            <option value="Agortola">Agortola</option>
             <option value="10">Nikunjo</option>
                 </select>
             </div>
             <div class="mb-3">
                 <label for="exampleInputPassword1" class="form-label">Your destination</label>
-                <select class="form-select" aria-label="Default select example">
+                <select class="form-select" name="description" aria-label="Default select example">
         <option selected>Select</option>
             <option value="1">Banani</option>
             <option value="2">Badda</option>
@@ -65,37 +66,37 @@ include 'partials/userNav.php';
                 <button type="submit" class="btn btn-primary">Confirm</button>
              </form>
     </div>
-            <div class="col-md-6">
-            <table class="table">
+    <div class="container my-4">
+      <table class="table" id="myTable">
   <thead>
     <tr>
-      <th scope="col">#</th>
-      <th scope="col">Pick up</th>
-      <th scope="col">Destination</th>
-      <th scope="col">Time</th>
+      <th scope="col">S.No</th>
+      <th scope="col">Title</th>
+      <th scope="col">Description</th>
+      <th scope="col">Actions</th>
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td colspan="2">Larry the Bird</td>
-      <td>@twitter</td>
-    </tr>
+  <?php 
+              $sql ="SELECT * FROM `notes`";   
+              $result = mysqli_query($conn, $sql);
+              $sno =0;
+
+                while($row= mysqli_fetch_assoc($result)){
+                  $sno = $sno + 1;
+                  echo "<tr>
+                  <th scope='row'>". $sno ."</th>
+                  <td>". $row['title'] ."</td>
+                  <td>". $row['description'] ."</td>
+                  <td><a href='#'>Delete</a> <a href='#'>Edit</a> <button class='btn cta-btn' style='line-height: 0.5;' >Pay</button></td>
+                </tr>";
+                }
+                
+            ?>
   </tbody>
 </table>
-            </div>
+
+      </div>
     </div>
 </div>
     
