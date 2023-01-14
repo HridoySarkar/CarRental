@@ -7,10 +7,6 @@ include 'partials/navbar.php';
 
 
 
-
-
-
-
 <div class="container-lg">
   <div class="row">
     <div class="col-lg-6 my-5"><img src="./img/herobanner.svg" class="img-fluid" alt="hero banner"></div>
