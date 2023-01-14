@@ -19,7 +19,6 @@ if(isset($_SESSION['user_name'])){
 $servername="localhost";
 $username="root";
 $password="";
-$database="notes";
 $insert = false;
 
 $conn = mysqli_connect($servername, $username, $password, $database);
@@ -30,13 +29,13 @@ if(!$conn){
 
 
 if($_SERVER['REQUEST_METHOD'] == "POST"){
-  $title = $_POST["title"];
-  $description = $_POST["description"];
-  $sql = "INSERT INTO `notes` (`title`, `description`) VALUES ('$title','$description')";
-  $result = mysqli_query($conn, $sql);
+  $title =mysqli_real_escape_string($conn,$_POST["f_from"]);
+  $description =mysqli_real_escape_string($conn, $_POST["d_to"]);
+  $sql = "INSERT INTO `note` (`f_from`, `d_to`) VALUES ('$title','$description')";
+  $resultNote = mysqli_query($conn, $sql);
 
 
-if($result){
+if($resultNote){
   $insert = true;
 }
 else{

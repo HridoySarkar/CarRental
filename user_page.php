@@ -25,11 +25,11 @@ include 'partials/userNav.php';
     </div>
     <div class="row">
     <div class="col-md-6">
-    <form>
+    <form method="post">
   <div class="mb-3">
     <h4>Where you want to go</h4>
     <label for="exampleInputEmail1" class="form-label">Pick up address</label>
-    <select class="form-select" name="title" aria-label="Default select example">
+    <select class="form-select" name="f_from" aria-label="Default select example">
         <option selected>Select</option>
             <option value="Banani">Banani</option>
             <option value="Badda">Badda</option>
@@ -40,29 +40,29 @@ include 'partials/userNav.php';
             <option value="Mirpur">Mirpur</option>
             <option value="Shahabag">Shahabag</option>
             <option value="Agortola">Agortola</option>
-            <option value="10">Nikunjo</option>
+            <option value="Nikunjo">Nikunjo</option>
                 </select>
             </div>
             <div class="mb-3">
                 <label for="exampleInputPassword1" class="form-label">Your destination</label>
-                <select class="form-select" name="description" aria-label="Default select example">
+                <select class="form-select" name="d_to" aria-label="Default select example">
         <option selected>Select</option>
-            <option value="1">Banani</option>
-            <option value="2">Badda</option>
-            <option value="3">Gulsan 1</option>
-            <option value="4">Gulsan 2</option>
-            <option value="5">Uttora</option>
-            <option value="6">Mohamadhpur</option>
-            <option value="7">Mirpur</option>
-            <option value="8">Shahabag</option>
-            <option value="9">Agortola</option>
-            <option value="10">Nikunjo</option>
+            <option value="Khulna">Khulna</option>
+            <option value="Cox's Bazar">Cox's Bazar</option>
+            <option value="Sajek Valley">Sajek Valley</option>
+            <option value="Rangamati">Rangamati</option>
+            <option value="Sylhet">Sylhet</option>
+            <option value="The Sundarbans">The Sundarbans</option>
+            <option value="Srimangal">Srimangal</option>
+            <option value="Bandarban">Bandarban</option>
+            <option value="Saint Martin">Saint Martin</option>
+            <option value="Kuakata">Kuakata</option>
                 </select>
             </div>
-            <div class="mb-3 form-check">
+            <!-- <div class="mb-3 form-check">
                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
                 <label class="form-check-label" for="exampleCheck1">I agree with the  <a href="#">terms and conditions </a></label>
-            </div>
+            </div> -->
                 <button type="submit" class="btn btn-primary">Confirm</button>
              </form>
     </div>
@@ -71,23 +71,23 @@ include 'partials/userNav.php';
   <thead>
     <tr>
       <th scope="col">S.No</th>
-      <th scope="col">Title</th>
-      <th scope="col">Description</th>
-      <th scope="col">Actions</th>
+      <th scope="col">From</th>
+      <th scope="col">Destination</th>
+      <th scope="col">Options</th>
     </tr>
   </thead>
   <tbody>
   <?php 
-              $sql ="SELECT * FROM `notes`";   
-              $result = mysqli_query($conn, $sql);
+              $sql ="SELECT * FROM `note`";   
+              $resultNote = mysqli_query($conn, $sql);
               $sno =0;
 
-                while($row= mysqli_fetch_assoc($result)){
+                while($row= mysqli_fetch_assoc($resultNote)){
                   $sno = $sno + 1;
                   echo "<tr>
                   <th scope='row'>". $sno ."</th>
-                  <td>". $row['title'] ."</td>
-                  <td>". $row['description'] ."</td>
+                  <td>". $row['f_from'] ."</td>
+                  <td>". $row['d_to'] ."</td>
                   <td><a href='#'>Delete</a> <a href='#'>Edit</a> <button class='btn cta-btn' style='line-height: 0.5;' >Pay</button></td>
                 </tr>";
                 }
