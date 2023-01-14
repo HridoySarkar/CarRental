@@ -1,7 +1,6 @@
 <?php
 include 'config/adminPageConfig.php';
 include 'partials/adminNav.php';
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
