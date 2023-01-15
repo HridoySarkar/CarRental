@@ -37,6 +37,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
 
 if($resultNote){
   $insert = true;
+  echo "<script>swal('Hello world!');</script>";
 }
 else{
   echo "The record was not inserted successfully because of this error -->" . mysqli_error($conn);

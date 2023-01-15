@@ -14,6 +14,9 @@ include 'partials/userNav.php';
 </head>
 <body>
 
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+
 
 <div class="container">
     <div class="content my-5">
@@ -78,6 +81,10 @@ include 'partials/userNav.php';
   </thead>
   <tbody>
   <?php 
+      $detlete ="DELETE FROM `note` WHERE 0";
+
+
+
               $sql ="SELECT * FROM `note`";   
               $resultNote = mysqli_query($conn, $sql);
               $sno =0;
@@ -88,7 +95,9 @@ include 'partials/userNav.php';
                   <th scope='row'>". $sno ."</th>
                   <td>". $row['f_from'] ."</td>
                   <td>". $row['d_to'] ."</td>
-                  <td><a href='#'>Delete</a> <a href='#'>Edit</a> <button class='btn cta-btn' style='line-height: 0.5;' >Pay</button></td>
+                  <td><a href='#'>Delete</a> <a href='#'>Edit</a>
+
+                  <button class='btn cta-btn' style='line-height: 0.5;' >Pay</button></td>
                 </tr>";
                 }
                 
