@@ -20,7 +20,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active fs-5" aria-current="page" href="#">Company</a>
+          <a class="nav-link active fs-5" aria-current="page" href="./aboutUs.php">Company</a>
         </li>
         <li class="nav-item">
           <a class="nav-link fs-5" href="safety.php">Sefety</a>
