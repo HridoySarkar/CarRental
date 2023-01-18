@@ -26,7 +26,7 @@ include 'partials/userNav.php';
         <div class="col-lg-6 p-4">
             <h1 class="display-5 fw-700">Our commitment to safety</h1>
             <p>We want you to move freely, make the most of your time, and be connected to the people and places that matter most to you. That’s why we are committed to safety, from the creation of new standards to the development of technology with the aim of reducing incidents.</p>
-            <p>Click the "Show Now" button to see all Emergency numbers and all area's Police Station.</p>
+            <p>Click the "<span class="text-bold">Show Now</span>" to see all Emergency numbers and all area's Police Station.</p>
             <button class="btn cta-btn" id="my-btn">Show Now</button>
         </div>
             <div class="safety" id="safe-table">
@@ -34,17 +34,17 @@ include 'partials/userNav.php';
   <thead>
     <tr>
       <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
+      <th scope="col">Thana</th>
+      <th scope="col">Number</th>
+      <th scope="col">Area & Location</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
+      <td>Banani</td>
+      <td>0170000001</td>
+      <td>Banani</td>
     </tr>
     <tr>
       <th scope="row">2</th>

@@ -1,4 +1,5 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="./style/custom_style.css">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="/style/custom_style.css">
 <div class="container-fluid pt-5 p-0">
@@ -9,93 +10,57 @@
     
     <div class="container p-4 pb-0">
       
-      <section class="">
+      <section class="footer">
         
         <div class="row">
           
-          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase">FOOTER CONTENT</h5>
-
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Molestiae modi cum ipsam ad, illo possimus laborum ut
-              reiciendis obcaecati. Ducimus, quas. Corrupti, pariatur eaque?
-              Reiciendis assumenda iusto sapiente inventore animi?
-            </p>
-          </div>
-          
-          <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase">Links</h5>
+          <div class="col-lg-4 col-md-4 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Company</h5>
 
             <ul class="list-unstyled mb-0">
               <li>
-                <a href="#!" class="text-white">Link 1</a>
+                <a href="#!" class="text-white">About us</a>
               </li>
               <li>
-                <a href="#!" class="text-white">Link 2</a>
+                <a href="#!" class="text-white">Newsroom</a>
               </li>
               <li>
-                <a href="#!" class="text-white">Link 3</a>
+                <a href="#!" class="text-white">Blog</a>
               </li>
               <li>
-                <a href="#!" class="text-white">Link 4</a>
+                <a href="#!" class="text-white">Careers</a>
               </li>
             </ul>
           </div>
           
-          <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase">Links</h5>
+          <div class="col-lg-4 col-md-4 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Innovation</h5>
 
             <ul class="list-unstyled mb-0">
               <li>
-                <a href="#!" class="text-white">Link 1</a>
+                <a href="#!" class="text-white">Ai</a>
               </li>
               <li>
-                <a href="#!" class="text-white">Link 2</a>
-              </li>
-              <li>
-                <a href="#!" class="text-white">Link 3</a>
-              </li>
-              <li>
-                <a href="#!" class="text-white">Link 4</a>
+                <a href="#!" class="text-white">Elevate</a>
               </li>
             </ul>
           </div>
           
-          <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase">Links</h5>
+          <div class="col-lg-4 col-md-4 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Info</h5>
 
             <ul class="list-unstyled mb-0">
               <li>
-                <a href="#!" class="text-white">Link 1</a>
+                <a href="#!" class="text-white">Plan</a>
               </li>
               <li>
-                <a href="#!" class="text-white">Link 2</a>
+                <a href="#!" class="text-white">Contact us</a>
               </li>
               <li>
-                <a href="#!" class="text-white">Link 3</a>
+                <a href="#!" class="text-white">Map</a>
               </li>
               <li>
-                <a href="#!" class="text-white">Link 4</a>
-              </li>
-            </ul>
-          </div>
-          
-          <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase">Links</h5>
-
-            <ul class="list-unstyled mb-0">
-              <li>
-                <a href="#!" class="text-white">Link 1</a>
-              </li>
-              <li>
-                <a href="#!" class="text-white">Link 2</a>
-              </li>
-              <li>
-                <a href="#!" class="text-white">Link 3</a>
-              </li>
-              <li>
-                <a href="#!" class="text-white">Link 4</a>
+                <a href="#!" class="text-white">Terms & conditions</a>
               </li>
             </ul>
           </div>

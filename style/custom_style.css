@@ -15,5 +15,7 @@
     border-color:#3f3d56 !important;
 }
 
-
+li>a{
+    text-decoration: none !important;
+}
 
