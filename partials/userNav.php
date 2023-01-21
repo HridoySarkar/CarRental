@@ -23,10 +23,10 @@
           <a class="nav-link active fs-5" aria-current="page" href="#">Company</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link fs-5" href="#">Sefety</a>
+          <a class="nav-link fs-5" href="./safety.php">Sefety</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link fs-5" href="#">Help</a>
+          <a class="nav-link fs-5" href=".help.php">Help</a>
         </li>
         <li class="nav-item">
           <a class="nav-link fs-5" href="./user_page.php">Rent now</a>
