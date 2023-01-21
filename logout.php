@@ -18,7 +18,7 @@ session_destroy();
     <div class="row">
         <div class="col-md">
             <?php
-                echo "swal('Here's the title!', '...and here's the text!');";
+                echo "<script>swal('Here's the title!', '...and here's the text!');</script>";
 
                 header('loaction:login.php');
             ?>

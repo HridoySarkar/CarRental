@@ -45,8 +45,9 @@ include 'config/singUpConfig.php'
     <label for="exampleInputPassword1" class="form-label">Confirm password</label>
     <input type="password" name="cpassword" class="form-control" id="exampleInputPassword1">
   </div>
-  <option required selected value="user"></option>
-</select>
+  <select name="user_type" class="d-none">
+  <option selected value="user"></option>
+  </select>
 
 
   <button type="submit" name="submit" value="register now" class="btn cta-btn">Sing up</button>
