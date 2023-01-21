@@ -51,7 +51,7 @@ if(isset($_POST['submit'])){
 
 
 
-    <div class="col-md-6 col-sm-1 mt-5">
+    <div class="col-md-4 col-sm-1 mt-5">
         <h2>Log in</h2>
        
 
