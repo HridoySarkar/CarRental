@@ -13,8 +13,6 @@ include 'config/singUpConfig.php'
     </div>
 
 
-
-
     <div class="col-md-4 col-sm-1 mt-5">
         <h2>Registration</h2>
 
